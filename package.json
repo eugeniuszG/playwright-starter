@@ -1,0 +1,24 @@
+{
+  "name": "p-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@axe-core/playwright": "^4.5.2",
+    "dotenv": "^16.0.3",
+    "playwright": "^1.29.1"
+  },
+  "devDependencies": {
+    "@applitools/eyes-playwright": "^1.13.0",
+    "@playwright/test": "^1.29.1"
+  },
+  "scripts": {
+    "tests": "npx playwright test ./src/tests",
+    "tests-pom": "npx playwright test demo-pom-todo-app.spec",
+    "report": "npx playwright show-report",
+    "codegen": "npx playwright codegen"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
