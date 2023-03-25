@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@applitools/eyes-playwright": "^1.13.0",
-    "@playwright/test": "^1.29.1"
+    "@playwright/test": "^1.31.2"
   },
   "scripts": {
     "tests": "npx playwright test ./src/tests",

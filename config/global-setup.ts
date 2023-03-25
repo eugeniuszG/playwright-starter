@@ -11,11 +11,9 @@ async function globalSetup(config: FullConfig) {
     console.log('try global setup')
     await context.tracing.start({ screenshots: true, snapshots: true });
     await page.goto(baseURL!);
-    await page.getByLabel('User Name').fill(process.env.USERNAME ? 
-      process.env.USERNAME : "example@mail.com");
-    await page.getByLabel('Password').fill(process.env.PASSWORD ? 
-      process.env.PASSWORD : "password");
-    await page.getByText('Sign in').click();
+
+    // Your login here
+
     await context.storageState({ path: storageState as string });
     await context.tracing.stop({
       path: './test-results/setup-trace.zip',
